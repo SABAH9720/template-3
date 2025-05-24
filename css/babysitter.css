@@ -1,0 +1,339 @@
+/*start variable*/
+:root {
+    --background-image :linear-gradient(to top, #B4E2FC , #F9E3F0 );
+    --main-color :#A1CEF8;
+    --secondery-color :#ffffff ;
+    --main-padding: 100px;
+    --button-color:#7baec9;
+}
+/*end variable*/
+/*start global rules*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.body {
+overflow: hidden;
+}
+
+a, ul li {
+    text-decoration: none;
+    cursor: pointer;
+    list-style: none;
+}
+.container {
+    margin-right:auto ;
+    margin-left: auto;
+    width: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.box-style  {
+    background-image: var(--background-image);
+}
+.box {
+    background-color: #A1CEF8;
+    border-radius: 20px;
+    width: 70%;
+    height: 89%;
+    position: relative;
+    left: 170px;
+    margin-top: 15px;
+}
+.animation img {
+        width: 50%;
+    float: right;
+    position: relative;
+    left: 170px;
+}
+
+/*end global rules*/
+/*start fp*/
+.fp {
+    background-color: A1CEF8;
+    overflow: hidden;
+}
+.fp .container .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 75px;
+}
+
+.fp .container .header .logo img{
+    border-style: none;
+    width: 30%;
+    position: relative;
+    left: 50px;
+}
+.fp .container .header .logo p {
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+}
+.fp .container .header .greet p {
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    font-family: sans-serif;
+    position: relative;
+    left: 50px;
+}
+.fp .container .header::after {
+    content: " ";
+    background-color: black;
+    position: absolute;
+    width: 150%;
+    bottom: 0;
+    height: 2px;
+    right: -30px;
+}
+.fp .container .header .right-side .navbar  {
+    display: flex;
+    position: relative;
+}
+.fp .container .header .right-side .navbar ul li a {
+    color: black;
+    align-items: center;
+    overflow: hidden;
+    font-family: sans-serif;
+    font-size: 20;
+    padding: 0 10px;
+    font-weight: 600;
+    position: relative;
+    top: 6px;
+}
+#home:active {
+    color: #7baec9;
+}
+
+/*.fp .land  {
+        position: relative;
+    height: 87.5%;
+    overflow: hidden;
+
+}
+.fp .land .container .box .content {
+    position: relative;
+    color: white;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    text-align: left;
+    font-weight: bold;
+}
+.fp .land .container .box .content .content1,.content2,.content3{
+display: flex;
+padding: 20px;
+}
+.fp .land .container .box .content a i {
+    padding-right: 10px;
+    color: lightcyan;
+}
+.fp .land .container .box .content p {
+    font-size: 22;
+}
+.land .box  a:last-child{
+    position: relative;
+    bottom: -30px;
+    background-color: #7baec9;
+    color: white;
+    text-transform: capitalize;
+    border-color: transparent;
+    width: 45%;
+    height: 70px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    left: 190px;
+    padding: 20px;
+    font-size: 27px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.land .box  a:hover{
+    background: #33333356;
+}
+
+/* start page 2*
+.page2 {
+    overflow: hidden;
+}
+.page2 .container .choosing {
+    position: relative;
+    top: 130px;
+    left: 70px;
+}
+.page2 .container .choosing button {
+    background-color: var(--button-color);
+    color: white;
+    border-color: transparent;
+    width: 45%;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 25px;
+}
+.choosing button a{
+    color: white;
+}
+.page2 .container .box-alt {
+    height: 85%;
+}
+
+/*end page 2*/
+/*start page 3*/
+.order-details .box .info form{
+        width: 20px;
+    position: relative;
+    top: 30px;
+    left: 90px;
+}
+.order-details .box .info form input {
+    padding: 20px;
+    border-radius: 30px;
+    border-color: transparent;
+    padding-right: 80px;
+    margin-bottom: 40px;
+}
+.page3 {
+    overflow: hidden;
+}
+.date {
+    width: 346px;
+}
+.time {
+    width: 350px;
+}
+.order-details .box .info .money  img {
+    position: relative;
+    width: 55px;
+    bottom: 105px;
+    left: 280px;
+}
+
+.search a{
+        position: relative;
+    bottom: 30;
+    left: 300px;
+    background-color: var(--button-color);
+    color: white;
+    border-color: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 20px;
+    font-size: 27px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+/*end page 3*/
+/*start page 4
+.orders {
+    overflow: hidden;
+}
+.order img{
+    width: 30%;
+}
+.order {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid;
+    border-radius: 50px;
+    width: 80%;
+    height: 115px;
+    position: relative;
+    top: 23px;
+    left: 50;
+    margin-bottom: 5px;
+}
+.ps h1 {
+    color: white;
+}
+.i {
+    position: relative;
+    top: 40;
+}
+.i .a i {
+    color: green;
+    font-size: 30px;
+    cursor: pointer;
+}
+.i a i{
+    color: red;
+    font-size: 30px;
+    cursor: pointer;
+}
+.order a  {
+width: 30%;
+
+}
+/*end page 4*/
+/*start page 5*/
+
+.accept {
+    overflow: hidden;
+}
+
+.box h1 {
+        text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+.content {
+        display: flex;
+    padding-top: 20px;
+}
+.content img {
+    width: 35%;
+}
+.information h3 {
+       padding: 20px 0 10px 20px ;
+    font-family: sans-serif;
+}
+.information p {
+        font-size: 18px;
+    padding-left: 17px;
+}
+
+.stars {
+        margin-left: 10px;
+    border: 1px solid;
+    width: fit-content;
+    font-size: 37;
+    color: green;
+    border-color: transparent;
+    background-color: #6da2d4;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+.stars i:last-child {
+    color: white;
+}
+
+.box a {
+        position: relative;
+    background-color: var(--button-color);
+    color: white;
+    border-color: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 20px;
+    font-size: 27px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding-left: 100px;
+    left: 450px;
+    padding-right: 100px;
+}
+/*end page 5*/
